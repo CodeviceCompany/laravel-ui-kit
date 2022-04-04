@@ -2,7 +2,6 @@
 
 namespace CodeviceCompany\LaravelUiKit;
 
-use CodeviceCompany\LaravelUiKit\Components\Input;
 use Illuminate\Support\Facades\Blade;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
@@ -19,9 +18,8 @@ class LaravelUiKitServiceProvider extends PackageServiceProvider
             ->name('ui-kit')
             ->hasConfigFile()
             ->hasViews('ui-kit')
-            // ->hasMigration('create_laravel-ui-kit_table')
             ->hasCommand(LaravelUiKitCommand::class);
 
-        Blade::componentNamespace('CodeviceCompany\\LaravelUiKit\\Components', 'test');
+        Blade::componentNamespace('CodeviceCompany\\LaravelUiKit\\Components', 'ui-kit');
     }
 }
