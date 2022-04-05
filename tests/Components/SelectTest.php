@@ -1,6 +1,8 @@
 <?php
 
-namespace CodeviceCompany\LaravelUiKit\Tests;
+namespace CodeviceCompany\LaravelUiKit\Tests\Components;
+
+use CodeviceCompany\LaravelUiKit\Tests\TestCase;
 
 class SelectTest extends TestCase
 {

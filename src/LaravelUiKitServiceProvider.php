@@ -11,6 +11,7 @@ use CodeviceCompany\LaravelUiKit\Components\Button\Index;
 use CodeviceCompany\LaravelUiKit\Components\Button\Primary;
 use CodeviceCompany\LaravelUiKit\Components\Button\Success;
 use CodeviceCompany\LaravelUiKit\Components\Button\Warning;
+use CodeviceCompany\LaravelUiKit\Components\Error;
 use CodeviceCompany\LaravelUiKit\Components\FormGroup;
 use CodeviceCompany\LaravelUiKit\Components\Input;
 use CodeviceCompany\LaravelUiKit\Components\Select;
@@ -55,5 +56,6 @@ class LaravelUiKitServiceProvider extends PackageServiceProvider
         Blade::component('ui-input', Input::class);
         Blade::component('ui-select', Select::class);
         Blade::component('ui-textarea', Textarea::class);
+        Blade::component('ui-error', Error::class);
     }
 }
