@@ -2,11 +2,11 @@
 
 namespace CodeviceCompany\LaravelUiKit\Tests;
 
+use CodeviceCompany\LaravelUiKit\LaravelUiKitServiceProvider;
 use Gajus\Dindent\Indenter;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Foundation\Testing\Concerns\InteractsWithViews;
 use Orchestra\Testbench\TestCase as Orchestra;
-use CodeviceCompany\LaravelUiKit\LaravelUiKitServiceProvider;
 
 class TestCase extends Orchestra
 {
