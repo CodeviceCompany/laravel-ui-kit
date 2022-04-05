@@ -12,8 +12,7 @@ class Index extends Component
         public $description = null,
         public $actions = null,
         public $thead = null,
-    )
-    {
+    ) {
     }
 
     public function render()
