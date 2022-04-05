@@ -2,9 +2,9 @@
 
 namespace CodeviceCompany\LaravelUiKit\Tests;
 
+use CodeviceCompany\LaravelUiKit\LaravelUiKitServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use CodeviceCompany\LaravelUiKit\LaravelUiKitServiceProvider;
 
 class TestCase extends Orchestra
 {

@@ -2,6 +2,7 @@
 
 namespace CodeviceCompany\LaravelUiKit;
 
+use CodeviceCompany\LaravelUiKit\Commands\LaravelUiKitCommand;
 use CodeviceCompany\LaravelUiKit\Components\App;
 use CodeviceCompany\LaravelUiKit\Components\Button\Danger;
 use CodeviceCompany\LaravelUiKit\Components\Button\Dark;
@@ -13,12 +14,10 @@ use CodeviceCompany\LaravelUiKit\Components\Button\Warning;
 use CodeviceCompany\LaravelUiKit\Components\FormGroup;
 use CodeviceCompany\LaravelUiKit\Components\Input;
 use CodeviceCompany\LaravelUiKit\Components\Select;
-use CodeviceCompany\LaravelUiKit\Components\ShortToggle;
 use CodeviceCompany\LaravelUiKit\Components\Textarea;
 use Illuminate\Support\Facades\Blade;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use CodeviceCompany\LaravelUiKit\Commands\LaravelUiKitCommand;
 
 class LaravelUiKitServiceProvider extends PackageServiceProvider
 {
