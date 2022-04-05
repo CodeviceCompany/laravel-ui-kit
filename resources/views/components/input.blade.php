@@ -2,7 +2,7 @@
 
 @php($id = $id ?? $for)
 
-@php($hasError = isset($name) ? $errors?->getBag($bag)->has($name) : false)
+@php($hasError = isset($name) ? $errors?->getBag($bag)?->has($name) : false)
 
 <input
     type="{{$type}}"
@@ -21,4 +21,4 @@
     ])
     autocomplete="false"
     {{$attributes->merge(['id' => $id])}}
->
+/>
