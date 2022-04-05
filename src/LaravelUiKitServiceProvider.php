@@ -45,7 +45,7 @@ class LaravelUiKitServiceProvider extends PackageServiceProvider
         Blade::component('ui-textarea', Components\Textarea::class);
         Blade::component('ui-error', Components\Error::class);
 
-        // Layout
+        // Layout - Sidebar
         Blade::component('ui-layout.sidebar', Components\Layout\Sidebar\Index::class);
         Blade::component('ui-layout.sidebar.nav', Components\Layout\Sidebar\Nav::class);
         Blade::component('ui-layout.sidebar.header', Components\Layout\Sidebar\Header::class);
@@ -53,5 +53,8 @@ class LaravelUiKitServiceProvider extends PackageServiceProvider
         Blade::component('ui-layout.sidebar.page-heading', Components\Layout\Sidebar\PageHeading::class);
         Blade::component('ui-layout.sidebar.nav-link', Components\Layout\Sidebar\NavLink::class);
         Blade::component('ui-layout.sidebar.profile-dropdown', Components\Layout\Sidebar\ProfileDropdown::class);
+
+        // Table
+        Blade::component('ui-table', Components\Table\Index::class);
     }
 }
