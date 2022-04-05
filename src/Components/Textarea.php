@@ -13,6 +13,7 @@ class Textarea extends Component
         public ?bool $disabled = false,
         public ?string $bag = 'default',
     ) {
+        $this->value = $name ? old($name, $value) : $value;
     }
 
     public function render()
