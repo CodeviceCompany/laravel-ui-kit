@@ -2,6 +2,14 @@
 
 namespace CodeviceCompany\LaravelUiKit;
 
+use CodeviceCompany\LaravelUiKit\Components\App;
+use CodeviceCompany\LaravelUiKit\Components\Button\Danger;
+use CodeviceCompany\LaravelUiKit\Components\Button\Dark;
+use CodeviceCompany\LaravelUiKit\Components\Button\DefaultButton;
+use CodeviceCompany\LaravelUiKit\Components\Button\Index;
+use CodeviceCompany\LaravelUiKit\Components\Button\Primary;
+use CodeviceCompany\LaravelUiKit\Components\Button\Success;
+use CodeviceCompany\LaravelUiKit\Components\Button\Warning;
 use Illuminate\Support\Facades\Blade;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
@@ -20,6 +28,23 @@ class LaravelUiKitServiceProvider extends PackageServiceProvider
             ->hasViews('ui-kit')
             ->hasCommand(LaravelUiKitCommand::class);
 
-        Blade::componentNamespace('CodeviceCompany\\LaravelUiKit\\Components', 'ui-kit');
+        $this->loadBladeComponents();
+    }
+
+    public function loadBladeComponents(): void
+    {
+
+        // General
+        Blade::component('ui-app', App::class);
+
+        // Buttons
+        Blade::component('ui-button', Index::class);
+        Blade::component('ui-button.default', DefaultButton::class);
+        Blade::component('ui-button.primary', Primary::class);
+        Blade::component('ui-button.success', Success::class);
+        Blade::component('ui-button.warning', Warning::class);
+        Blade::component('ui-button.danger', Danger::class);
+        Blade::component('ui-button.dark', Dark::class);
+
     }
 }

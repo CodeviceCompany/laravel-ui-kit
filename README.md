@@ -35,7 +35,21 @@ php artisan vendor:publish --tag="laravel-ui-kit-views"
 ## Usage
 
 ```html
-<x-ui-kit::input>
+<x-ui-app title="Page title">
+    {{-- Your content here --}}
+</x-ui-app>
+```
+
+### Buttons
+
+```html
+<x-ui-button icon="heroicon-o-user" href="#" hide-text-on-mobile>Click Me</x-ui-button>
+<x-ui-button.default>Click Me</x-ui-button.default>
+<x-ui-button.primary>Click Me</x-ui-button.primary>
+<x-ui-button.success>Click Me</x-ui-button.success>
+<x-ui-button.warning>Click Me</x-ui-button.warning>
+<x-ui-button.danger>Click Me</x-ui-button.danger>
+<x-ui-button.dark>Click Me</x-ui-button.dark>
 ```
 
 ## Testing
