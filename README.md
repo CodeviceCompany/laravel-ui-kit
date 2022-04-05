@@ -13,6 +13,51 @@ You can install the package via composer:
 composer require codevicecompany/laravel-ui-kit
 ```
 
+resources/js/app.js
+
+```javascript
+import Alpine from 'alpinejs';
+
+window.Alpine = Alpine;
+
+Alpine.start();
+```
+
+tailwind.config.js
+
+```javascript
+const defaultTheme = require("tailwindcss/defaultTheme");
+const colors = require("tailwindcss/colors");
+
+module.exports = {
+    mode: "jit",
+    
+    content: [
+        // vendors
+        "./vendor/codevicecompany/laravel-ui-kit/resources/views/**/*.blade.php",
+    ],
+
+    theme: {
+        extend: {
+            fontFamily: {
+                sans: ["Inter", ...defaultTheme.fontFamily.sans],
+            },
+            colors: {
+                cyan: colors.cyan,
+                facebook: "#4867aa",
+                instagram: "#bc2a8d",
+                twitter: "#2eb6f1",
+                linkedin: "#1a77b5",
+            },
+            backgroundPosition: {
+                "left-2": "left 0.5rem center",
+                "right-2": "right 0.5rem center",
+            },
+        },
+    },
+};
+```
+
 You can publish the config file with:
 
 ```bash
