@@ -35,6 +35,7 @@ php artisan vendor:publish --tag="laravel-ui-kit-views"
 ## Usage
 
 ```html
+
 <x-ui-app title="Page title">
     {{-- Your content here --}}
 </x-ui-app>
@@ -43,6 +44,7 @@ php artisan vendor:publish --tag="laravel-ui-kit-views"
 ### Buttons
 
 ```html
+
 <x-ui-button icon="heroicon-o-user" href="#" hide-text-on-mobile>Click Me</x-ui-button>
 <x-ui-button.default>Click Me</x-ui-button.default>
 <x-ui-button.primary>Click Me</x-ui-button.primary>
@@ -50,6 +52,37 @@ php artisan vendor:publish --tag="laravel-ui-kit-views"
 <x-ui-button.warning>Click Me</x-ui-button.warning>
 <x-ui-button.danger>Click Me</x-ui-button.danger>
 <x-ui-button.dark>Click Me</x-ui-button.dark>
+```
+
+### Forms
+
+The form wrapper
+
+```html
+<x-ui-form-group
+    name="website"
+    label="Website"
+    suffix=".com"
+    prefix="www."
+    prefixClass="class"
+    hint="Hint"
+    required
+    bag="default"
+    for="id"
+>
+    {{-- x-ui-input / x-ui-textarea / x-ui-select --}}
+</x-ui-form-group>
+```
+
+```html
+
+<ui-input bag="bag" />
+
+<ui-select bag="bag">
+    <option value=""></option>
+</ui-select>
+
+<ui-textarea bag="bag">{{-- text --}}</ui-textarea>
 ```
 
 ## Testing

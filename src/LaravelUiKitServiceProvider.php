@@ -10,6 +10,11 @@ use CodeviceCompany\LaravelUiKit\Components\Button\Index;
 use CodeviceCompany\LaravelUiKit\Components\Button\Primary;
 use CodeviceCompany\LaravelUiKit\Components\Button\Success;
 use CodeviceCompany\LaravelUiKit\Components\Button\Warning;
+use CodeviceCompany\LaravelUiKit\Components\FormGroup;
+use CodeviceCompany\LaravelUiKit\Components\Input;
+use CodeviceCompany\LaravelUiKit\Components\Select;
+use CodeviceCompany\LaravelUiKit\Components\ShortToggle;
+use CodeviceCompany\LaravelUiKit\Components\Textarea;
 use Illuminate\Support\Facades\Blade;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
@@ -46,5 +51,10 @@ class LaravelUiKitServiceProvider extends PackageServiceProvider
         Blade::component('ui-button.danger', Danger::class);
         Blade::component('ui-button.dark', Dark::class);
 
+        // Form
+        Blade::component('ui-form-group', FormGroup::class);
+        Blade::component('ui-input', Input::class);
+        Blade::component('ui-select', Select::class);
+        Blade::component('ui-textarea', Textarea::class);
     }
 }
