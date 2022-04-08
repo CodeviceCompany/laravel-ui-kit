@@ -128,7 +128,45 @@ The form wrapper
 </ui-select>
 
 <ui-textarea bag="bag">{{-- text --}}</ui-textarea>
+
+@isset($name)
+<x-ui-error :field="$name" :bag="$bag" id="{{$for}}-error">
+    <ul>
+        @foreach ($component->messages($errors) as $error)
+        <li class="mt-2 text-sm text-red-600">{{ $error }}</li>
+        @endforeach
+    </ul>
+</x-ui-error>
+@endisset
 ```
+
+### Modal
+
+```html
+<x-ui-button.primary x-on:click="$dispatch('openModal','modal-id')">Open</x-ui-button.primary>
+
+<x-ui-modal id="modal-id">
+    <x-slot name="footer"> Foorter </x-slot>
+    {{-- Modal content --}}
+</x-ui-modal>
+```
+
+
+### Layouts
+#### Sidebar
+
+```html
+<x-ui-layout.sidebar title="Page">
+    <x-slot name="actions"></x-slot>
+    {{-- Your content here --}}
+</x-ui-layout.sidebar>
+```
+
+to edit navs or profile dropdown publish the views then edit:
+
+- resources/views/vendor/ui-kit/layout/sidebar/nav.blade.php
+- resources/views/vendor/ui-kit/layout/sidebar/profile-dropdown.blade.php
+
 
 ## Testing
 
