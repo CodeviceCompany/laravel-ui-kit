@@ -2,9 +2,8 @@
 
 namespace CodeviceCompany\LaravelUiKit\Components\Button;
 
-use Illuminate\View\Component;
 
-class Primary extends Component
+class Primary extends Index
 {
     public function render()
     {

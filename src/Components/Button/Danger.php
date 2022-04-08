@@ -2,9 +2,7 @@
 
 namespace CodeviceCompany\LaravelUiKit\Components\Button;
 
-use Illuminate\View\Component;
-
-class Danger extends Component
+class Danger extends Index
 {
     public function render()
     {
