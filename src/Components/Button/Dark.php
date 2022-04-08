@@ -2,7 +2,9 @@
 
 namespace CodeviceCompany\LaravelUiKit\Components\Button;
 
-class Dark extends Index
+use CodeviceCompany\LaravelUiKit\Components\Button;
+
+class Dark extends Button
 {
     public function render()
     {

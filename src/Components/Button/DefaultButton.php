@@ -2,7 +2,9 @@
 
 namespace CodeviceCompany\LaravelUiKit\Components\Button;
 
-class DefaultButton extends Index
+use CodeviceCompany\LaravelUiKit\Components\Button;
+
+class DefaultButton extends Button
 {
     public function render()
     {

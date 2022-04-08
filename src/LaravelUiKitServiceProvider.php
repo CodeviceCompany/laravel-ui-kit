@@ -30,7 +30,7 @@ class LaravelUiKitServiceProvider extends PackageServiceProvider
             $blade->component('ui-app', Components\App::class);
 
             // Buttons
-            $blade->component('ui-button', Components\Button\Index::class);
+            $blade->component('ui-button', Components\Button::class);
             $blade->component('ui-button.default', Components\Button\DefaultButton::class);
             $blade->component('ui-button.primary', Components\Button\Primary::class);
             $blade->component('ui-button.success', Components\Button\Success::class);

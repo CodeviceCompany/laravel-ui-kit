@@ -2,7 +2,9 @@
 
 namespace CodeviceCompany\LaravelUiKit\Components\Button;
 
-class Success extends Index
+use CodeviceCompany\LaravelUiKit\Components\Button;
+
+class Success extends Button
 {
     public function render()
     {

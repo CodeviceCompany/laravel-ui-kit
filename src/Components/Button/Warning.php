@@ -2,7 +2,9 @@
 
 namespace CodeviceCompany\LaravelUiKit\Components\Button;
 
-class Warning extends Index
+use CodeviceCompany\LaravelUiKit\Components\Button;
+
+class Warning extends Button
 {
     public function render()
     {

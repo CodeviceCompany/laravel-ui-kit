@@ -1,10 +1,11 @@
 <?php
 
-namespace CodeviceCompany\LaravelUiKit\Components\Button;
+namespace CodeviceCompany\LaravelUiKit\Components;
 
 use Illuminate\View\Component;
+use function view;
 
-class Index extends Component
+class Button extends Component
 {
     public function __construct(
         public $icon = false,
