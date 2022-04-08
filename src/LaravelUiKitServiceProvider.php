@@ -56,6 +56,12 @@ class LaravelUiKitServiceProvider extends PackageServiceProvider
 
             // Table
             $blade->component('ui-table', Components\Table\Index::class);
+
+            // Modal
+            $blade->component('ui-modal', Components\Modal::class);
+
+            // Card
+            $blade->component('ui-card', Components\Card::class);
         });
     }
 }
