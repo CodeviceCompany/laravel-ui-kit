@@ -1,8 +1,8 @@
-@php
-    $navigation = [
-        // ['name' => __('Dashboard'), 'href' => route('dashboard.index'), 'icon' => 'heroicon-o-presentation-chart-line', 'isActive' => request()->routeIs('dashboard.index')],
-    ];
-@endphp
+@props([
+    'navigations' => [
+        ['name' => __('Dashboard'), 'href' => '/', 'icon' => 'heroicon-o-presentation-chart-line', 'isActive' => request()->routeIs('dashboard.index')],
+    ]
+])
 
 <div x-data="{ open: false }"
      @keydown.window.escape="open = false"
@@ -62,7 +62,7 @@
 
             <div class="mt-5 flex-1 h-0 overflow-y-auto">
                 <nav class="px-2 space-y-1">
-                    @foreach($navigation as $item)
+                    @foreach($navigations as $item)
                         <x-ui-layout.sidebar.nav-link
                             :href="$item['href']"
                             :icon="$item['icon']"
@@ -91,7 +91,7 @@
             <div class="flex-1 flex flex-col overflow-y-auto">
                 <nav class="flex-1 px-2 py-4 space-y-1">
 
-                    @foreach($navigation as $item)
+                    @foreach($navigations as $item)
                         <x-ui-layout.sidebar.nav-link
                             :href="$item['href']"
                             :icon="$item['icon']"

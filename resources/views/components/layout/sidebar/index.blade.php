@@ -1,8 +1,6 @@
-@props(['title', 'actions' => null])
-
 <x-ui-app class="bg-gray-100" :title="$title">
     <div x-data>
-        <x-ui-layout.sidebar.nav />
+        <x-ui-layout.sidebar.nav :navigations="$navigations" />
         <div class="md:pl-64 flex flex-col">
             <x-ui-layout.sidebar.header />
 
